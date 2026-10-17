@@ -23,7 +23,7 @@ def test_valid_login():
         ).click()
 
         WebDriverWait(driver, 10).until(
-            EC.url_contains("dashboard")
+            EC.url_contains("dashboard") 
         )
 
         assert "dashboard" in driver.current_url.lower()
